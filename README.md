@@ -1,20 +1,22 @@
-# nw-builder [![NPM version][npm-image]][npm-url] [![Dependency Status][depstat-image]][depstat-url] [![Join the chat at https://gitter.im/nwjs/nw-builder](https://badges.gitter.im/nwjs/nw-builder.svg)](https://gitter.im/nwjs/nw-builder?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+# nw-packager [![NPM version][npm-image]][npm-url] [![Dependency Status][depstat-image]][depstat-url] [![Join the chat at https://gitter.im/nwjs/nw-builder](https://badges.gitter.im/nwjs/nw-builder.svg)](https://gitter.im/nwjs/nw-builder?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-[![NPM](https://nodei.co/npm/nw-builder.png?downloads=true)](https://nodei.co/npm/nw-builder/)
+[![NPM](https://nodei.co/npm/nw-packager.png?downloads=true)](https://nodei.co/npm/nw-packager/)
 
-> Build your [NW.js](https://github.com/nwjs/nw.js) apps for Mac, Win and Linux programmatically or via CLI.
+> This is based on nwjs-community/nw-builder repo. Thank you for awesome package. nwjs-community team: 
+> 
+> Adam Lynch ([@adam-lynch](https://github.com/adam-lynch)) & Rémy Boulanouar ([@DblK](https://github.com/DblK))
 
 
 ### Installation
 
 ##### Local
 ```shell
-npm install nw-builder --save-dev
+npm i nw-packager --save-dev
 ```
 
 ##### Global
 ```shell
-npm install nw-builder -g
+npm i nw-packager -g
 ```
 
 ##### Grunt and Gulp Plugins
@@ -32,6 +34,7 @@ Options:
   -r, --run            Runs NW.js for the current platform                                   [default: false]
   -o, --buildDir       The build folder                                                      [default: "./build"]
   -f, --forceDownload  Force download of NW.js                                               [default: false]
+  -t, --flavor         NW.js Flavor ['normal', 'sdk']                                        [default: "sdk"]
   --cacheDir           The cache folder
   --quiet              Disables logging                                                      [default: false]
 
@@ -322,11 +325,11 @@ See [CHANGELOG.md](CHANGELOG.md) or [Releases](https://github.com/nwjs-community
 
 [MIT License](https://en.wikipedia.org/wiki/MIT_License)
 
-[npm-url]: https://www.npmjs.com/package/nw-builder
-[npm-image]: https://img.shields.io/npm/v/nw-builder.svg?style=flat
+[npm-url]: https://www.npmjs.com/package/nw-packager
+[npm-image]: https://img.shields.io/npm/v/nw-packager.svg?style=flat
 
-[travis-url]: https://travis-ci.org/nwjs/nw-builder
-[travis-image]: https://img.shields.io/travis/nwjs/nw-builder/master.svg?style=flat
+[travis-url]: https://travis-ci.org/nwjs/nw-packager
+[travis-image]: https://img.shields.io/travis/nwjs/nw-packager/master.svg?style=flat
 
-[depstat-url]: https://david-dm.org/nwjs/nw-builder
-[depstat-image]: https://david-dm.org/nwjs/nw-builder.svg?style=flat
+[depstat-url]: https://status.david-dm.org/gh/HakobiDev/nw-builder
+[depstat-image]: https://status.david-dm.org/gh/HakobiDev/nw-builder.svg?style=flat
