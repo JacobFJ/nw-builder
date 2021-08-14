@@ -1,20 +1,22 @@
-# nw-builder [![NPM version][npm-image]][npm-url] [![Dependency Status][depstat-image]][depstat-url] [![Join the chat at https://gitter.im/nwjs/nw-builder](https://badges.gitter.im/nwjs/nw-builder.svg)](https://gitter.im/nwjs/nw-builder?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+# nw-packager [![NPM version][npm-image]][npm-url] [![Dependency Status][depstat-image]][depstat-url] [![Join the chat at https://gitter.im/nwjs/nw-builder](https://badges.gitter.im/nwjs/nw-builder.svg)](https://gitter.im/nwjs/nw-builder?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-[![NPM](https://nodei.co/npm/nw-builder.png?downloads=true)](https://nodei.co/npm/nw-builder/)
+[![NPM](https://nodei.co/npm/nw-packager.png?downloads=true)](https://nodei.co/npm/nw-packager/)
 
-> Build your [NW.js](https://github.com/nwjs/nw.js) apps for Mac, Win and Linux programmatically or via CLI.
+> This is based on nwjs-community/nw-builder repo. Thank you for awesome package. nwjs-community team: 
+> 
+> Adam Lynch ([@adam-lynch](https://github.com/adam-lynch)) & Rémy Boulanouar ([@DblK](https://github.com/DblK)) & Steffen Müller ([@steffenmllr](https://github.com/steffenmllr)) (Creator)
 
 
 ### Installation
 
 ##### Local
 ```shell
-npm install nw-builder --save-dev
+npm i nw-packager --save-dev
 ```
 
 ##### Global
 ```shell
-npm install nw-builder -g
+npm i nw-packager -g
 ```
 
 ##### Grunt and Gulp Plugins
@@ -32,6 +34,7 @@ Options:
   -r, --run            Runs NW.js for the current platform                                   [default: false]
   -o, --buildDir       The build folder                                                      [default: "./build"]
   -f, --forceDownload  Force download of NW.js                                               [default: false]
+  -t, --flavor         NW.js Flavor ['normal', 'sdk']                                        [default: "sdk"]
   --cacheDir           The cache folder
   --quiet              Disables logging                                                      [default: false]
 
@@ -288,7 +291,7 @@ Additionally, when specifying multiple version of the same platform such as "win
 
 See [#85](https://github.com/nwjs/nw-builder/issues/85) and [#94](https://github.com/nwjs/nw-builder/pull/94) for more information. If you need this during development too, see [platform-overrides](https://github.com/adam-lynch/platform-overrides) and [gulp-platform-overrides](https://github.com/adam-lynch/gulp-platform-overrides). There is no Grunt plugin, [yet](https://github.com/new).
 
-## Troubleshooting
+## Troubleshooting
 
 ### OSX ulimit
 
@@ -306,27 +309,4 @@ To get around it, run `ulimit -n 1024` (or add it to your `~/.bash_profile`). Fo
 
 **Past**
 
-- Steffen Müller ([@steffenmllr](https://github.com/steffenmllr)) (Creator)
-- Gabe Paez ([@gabepaez](https://github.com/gabepaez))
-- Andy Trevorah ([@trevorah](https://github.com/trevorah))
-
-## Contributing
-
-See [CONTRIBUTING.md](CONTRIBUTING.md).
-
-## Release History
-
-See [CHANGELOG.md](CHANGELOG.md) or [Releases](https://github.com/nwjs-community/nw-builder/blob/develop/releases).
-
-## License
-
-[MIT License](https://en.wikipedia.org/wiki/MIT_License)
-
-[npm-url]: https://www.npmjs.com/package/nw-builder
-[npm-image]: https://img.shields.io/npm/v/nw-builder.svg?style=flat
-
-[travis-url]: https://travis-ci.org/nwjs/nw-builder
-[travis-image]: https://img.shields.io/travis/nwjs/nw-builder/master.svg?style=flat
-
-[depstat-url]: https://david-dm.org/nwjs/nw-builder
-[depstat-image]: https://david-dm.org/nwjs/nw-builder.svg?style=flat
+- Steffen Müller ([@steffenmllr](https://github.com/steffenmllr

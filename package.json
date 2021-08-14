@@ -1,29 +1,22 @@
 {
-  "name": "nw-builder",
+  "name": "nw-packager",
   "version": "3.6.0",
-  "description": "nw-builder",
+  "description": "nwbuild",
   "main": "index.js",
   "scripts": {
     "test": "tape test/*.js"
   },
   "repository": {
     "type": "https",
-    "url": "https://github.com/HakobiDev/nw-builder.git"
+    "url": "git+https://github.com/HakobiDev/nw-builder.git"
   },
   "bin": {
-    "nwbuild": "./bin/nwbuild"
+    "nwbuild": "bin/nwbuild"
   },
-  "author": {
-    "name": "Steffen Müller"
-  },
+  "author": "Steffen Müller",
   "contributors": [
-    {
-      "name": "Adam Lynch",
-      "email": "contact@adamlynch.com"
-    },
-    {
-      "name": "HakobiDev"
-    }
+    "Adam Lynch <contact@adamlynch.com>",
+    "HakobiDev"
   ],
   "engines": {
     "node": ">= 4.0.0"
@@ -72,5 +65,10 @@
     "update-notifier": "^5.1.0",
     "winresourcer": "^0.9.0",
     "yargs": "^17.1.1"
+  },
+  "directories": {
+    "example": "example",
+    "lib": "lib",
+    "test": "test"
   }
 }
