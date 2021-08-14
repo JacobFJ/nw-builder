@@ -11,12 +11,12 @@
 
 ##### Local
 ```shell
-npm install nw-builder --save-dev
+npm i nw-packager --save-dev
 ```
 
 ##### Global
 ```shell
-npm install nw-builder -g
+npm i nw-packager -g
 ```
 
 ##### Grunt and Gulp Plugins
